@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154F5C1320FF38E800F6EE9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C1220FF38E800F6EE9C /* AppDelegate.m */; };
+		154F5C1620FF38E800F6EE9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C1520FF38E800F6EE9C /* ViewController.m */; };
+		154F5C1820FF38E900F6EE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154F5C1720FF38E900F6EE9C /* Assets.xcassets */; };
+		154F5C1B20FF38E900F6EE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154F5C1920FF38E900F6EE9C /* Main.storyboard */; };
+		154F5C1E20FF38E900F6EE9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C1D20FF38E900F6EE9C /* main.m */; };
+		154F5C2C20FF391600F6EE9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154F5C2B20FF391600F6EE9C /* Cocoa.framework */; };
+		154F5C3020FF391600F6EE9C /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C2F20FF391600F6EE9C /* SourceEditorExtension.m */; };
+		154F5C3820FF391600F6EE9C /* ZQSourceEditorCommand.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 154F5C2920FF391600F6EE9C /* ZQSourceEditorCommand.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		154F5C3F20FF392F00F6EE9C /* DeleteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C3E20FF392F00F6EE9C /* DeleteCommand.m */; };
+		154F5C4220FF393500F6EE9C /* AlignCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C4120FF393500F6EE9C /* AlignCommand.m */; };
+		154F5C4720FF393C00F6EE9C /* JosnModelEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C4420FF393C00F6EE9C /* JosnModelEditorCommand.m */; };
+		154F5C4820FF393C00F6EE9C /* PropertyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 154F5C4620FF393C00F6EE9C /* PropertyCommand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154F5C3620FF391600F6EE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154F5C0620FF38E800F6EE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154F5C2820FF391600F6EE9C;
+			remoteInfo = ZQSourceEditorCommand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		154F5C3C20FF391600F6EE9C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				154F5C3820FF391600F6EE9C /* ZQSourceEditorCommand.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		154F5C0E20FF38E800F6EE9C /* ZZQSourceEditorCommand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZQSourceEditorCommand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		154F5C1120FF38E800F6EE9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		154F5C1220FF38E800F6EE9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		154F5C1420FF38E800F6EE9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		154F5C1520FF38E800F6EE9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		154F5C1720FF38E900F6EE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		154F5C1A20FF38E900F6EE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		154F5C1C20FF38E900F6EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154F5C1D20FF38E900F6EE9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		154F5C1F20FF38E900F6EE9C /* ZZQSourceEditorCommand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZZQSourceEditorCommand.entitlements; sourceTree = "<group>"; };
+		154F5C2920FF391600F6EE9C /* ZQSourceEditorCommand.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZQSourceEditorCommand.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		154F5C2B20FF391600F6EE9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		154F5C2E20FF391600F6EE9C /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		154F5C2F20FF391600F6EE9C /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		154F5C3420FF391600F6EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154F5C3520FF391600F6EE9C /* ZQSourceEditorCommand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZQSourceEditorCommand.entitlements; sourceTree = "<group>"; };
+		154F5C3D20FF392F00F6EE9C /* DeleteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCommand.h; sourceTree = "<group>"; };
+		154F5C3E20FF392F00F6EE9C /* DeleteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCommand.m; sourceTree = "<group>"; };
+		154F5C4020FF393500F6EE9C /* AlignCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignCommand.h; sourceTree = "<group>"; };
+		154F5C4120FF393500F6EE9C /* AlignCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlignCommand.m; sourceTree = "<group>"; };
+		154F5C4320FF393C00F6EE9C /* PropertyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyCommand.h; sourceTree = "<group>"; };
+		154F5C4420FF393C00F6EE9C /* JosnModelEditorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JosnModelEditorCommand.m; sourceTree = "<group>"; };
+		154F5C4520FF393C00F6EE9C /* JosnModelEditorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JosnModelEditorCommand.h; sourceTree = "<group>"; };
+		154F5C4620FF393C00F6EE9C /* PropertyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyCommand.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154F5C0B20FF38E800F6EE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154F5C2620FF391600F6EE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154F5C2C20FF391600F6EE9C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154F5C0520FF38E800F6EE9C = {
+			isa = PBXGroup;
+			children = (
+				154F5C1020FF38E800F6EE9C /* ZZQSourceEditorCommand */,
+				154F5C2D20FF391600F6EE9C /* ZQSourceEditorCommand */,
+				154F5C2A20FF391600F6EE9C /* Frameworks */,
+				154F5C0F20FF38E800F6EE9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		154F5C0F20FF38E800F6EE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154F5C0E20FF38E800F6EE9C /* ZZQSourceEditorCommand.app */,
+				154F5C2920FF391600F6EE9C /* ZQSourceEditorCommand.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		154F5C1020FF38E800F6EE9C /* ZZQSourceEditorCommand */ = {
+			isa = PBXGroup;
+			children = (
+				154F5C1120FF38E800F6EE9C /* AppDelegate.h */,
+				154F5C1220FF38E800F6EE9C /* AppDelegate.m */,
+				154F5C1420FF38E800F6EE9C /* ViewController.h */,
+				154F5C1520FF38E800F6EE9C /* ViewController.m */,
+				154F5C1720FF38E900F6EE9C /* Assets.xcassets */,
+				154F5C1920FF38E900F6EE9C /* Main.storyboard */,
+				154F5C1C20FF38E900F6EE9C /* Info.plist */,
+				154F5C1D20FF38E900F6EE9C /* main.m */,
+				154F5C1F20FF38E900F6EE9C /* ZZQSourceEditorCommand.entitlements */,
+			);
+			path = ZZQSourceEditorCommand;
+			sourceTree = "<group>";
+		};
+		154F5C2A20FF391600F6EE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				154F5C2B20FF391600F6EE9C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		154F5C2D20FF391600F6EE9C /* ZQSourceEditorCommand */ = {
+			isa = PBXGroup;
+			children = (
+				154F5C2E20FF391600F6EE9C /* SourceEditorExtension.h */,
+				154F5C2F20FF391600F6EE9C /* SourceEditorExtension.m */,
+				154F5C4520FF393C00F6EE9C /* JosnModelEditorCommand.h */,
+				154F5C4420FF393C00F6EE9C /* JosnModelEditorCommand.m */,
+				154F5C4320FF393C00F6EE9C /* PropertyCommand.h */,
+				154F5C4620FF393C00F6EE9C /* PropertyCommand.m */,
+				154F5C4020FF393500F6EE9C /* AlignCommand.h */,
+				154F5C4120FF393500F6EE9C /* AlignCommand.m */,
+				154F5C3D20FF392F00F6EE9C /* DeleteCommand.h */,
+				154F5C3E20FF392F00F6EE9C /* DeleteCommand.m */,
+				154F5C3420FF391600F6EE9C /* Info.plist */,
+				154F5C3520FF391600F6EE9C /* ZQSourceEditorCommand.entitlements */,
+			);
+			path = ZQSourceEditorCommand;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154F5C0D20FF38E800F6EE9C /* ZZQSourceEditorCommand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154F5C2220FF38E900F6EE9C /* Build configuration list for PBXNativeTarget "ZZQSourceEditorCommand" */;
+			buildPhases = (
+				154F5C0A20FF38E800F6EE9C /* Sources */,
+				154F5C0B20FF38E800F6EE9C /* Frameworks */,
+				154F5C0C20FF38E800F6EE9C /* Resources */,
+				154F5C3C20FF391600F6EE9C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154F5C3720FF391600F6EE9C /* PBXTargetDependency */,
+			);
+			name = ZZQSourceEditorCommand;
+			productName = ZZQSourceEditorCommand;
+			productReference = 154F5C0E20FF38E800F6EE9C /* ZZQSourceEditorCommand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		154F5C2820FF391600F6EE9C /* ZQSourceEditorCommand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154F5C3920FF391600F6EE9C /* Build configuration list for PBXNativeTarget "ZQSourceEditorCommand" */;
+			buildPhases = (
+				154F5C2520FF391600F6EE9C /* Sources */,
+				154F5C2620FF391600F6EE9C /* Frameworks */,
+				154F5C2720FF391600F6EE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQSourceEditorCommand;
+			productName = ZQSourceEditorCommand;
+			productReference = 154F5C2920FF391600F6EE9C /* ZQSourceEditorCommand.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154F5C0620FF38E800F6EE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = addcn;
+				TargetAttributes = {
+					154F5C0D20FF38E800F6EE9C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					154F5C2820FF391600F6EE9C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 154F5C0920FF38E800F6EE9C /* Build configuration list for PBXProject "ZZQSourceEditorCommand" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 154F5C0520FF38E800F6EE9C;
+			productRefGroup = 154F5C0F20FF38E800F6EE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154F5C0D20FF38E800F6EE9C /* ZZQSourceEditorCommand */,
+				154F5C2820FF391600F6EE9C /* ZQSourceEditorCommand */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154F5C0C20FF38E800F6EE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154F5C1820FF38E900F6EE9C /* Assets.xcassets in Resources */,
+				154F5C1B20FF38E900F6EE9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154F5C2720FF391600F6EE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154F5C0A20FF38E800F6EE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154F5C1620FF38E800F6EE9C /* ViewController.m in Sources */,
+				154F5C1E20FF38E900F6EE9C /* main.m in Sources */,
+				154F5C1320FF38E800F6EE9C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154F5C2520FF391600F6EE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154F5C4820FF393C00F6EE9C /* PropertyCommand.m in Sources */,
+				154F5C3020FF391600F6EE9C /* SourceEditorExtension.m in Sources */,
+				154F5C3F20FF392F00F6EE9C /* DeleteCommand.m in Sources */,
+				154F5C4720FF393C00F6EE9C /* JosnModelEditorCommand.m in Sources */,
+				154F5C4220FF393500F6EE9C /* AlignCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154F5C3720FF391600F6EE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154F5C2820FF391600F6EE9C /* ZQSourceEditorCommand */;
+			targetProxy = 154F5C3620FF391600F6EE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		154F5C1920FF38E900F6EE9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154F5C1A20FF38E900F6EE9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		154F5C2020FF38E900F6EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		154F5C2120FF38E900F6EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		154F5C2320FF38E900F6EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZZQSourceEditorCommand/ZZQSourceEditorCommand.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				INFOPLIST_FILE = ZZQSourceEditorCommand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ZZQSourceEditorCommand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		154F5C2420FF38E900F6EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZZQSourceEditorCommand/ZZQSourceEditorCommand.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				INFOPLIST_FILE = ZZQSourceEditorCommand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ZZQSourceEditorCommand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		154F5C3A20FF391600F6EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZQSourceEditorCommand/ZQSourceEditorCommand.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				INFOPLIST_FILE = ZQSourceEditorCommand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ZZQSourceEditorCommand.ZQSourceEditorCommand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		154F5C3B20FF391600F6EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZQSourceEditorCommand/ZQSourceEditorCommand.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FP3JZEB9B3;
+				INFOPLIST_FILE = ZQSourceEditorCommand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.ZZQSourceEditorCommand.ZQSourceEditorCommand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154F5C0920FF38E800F6EE9C /* Build configuration list for PBXProject "ZZQSourceEditorCommand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154F5C2020FF38E900F6EE9C /* Debug */,
+				154F5C2120FF38E900F6EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154F5C2220FF38E900F6EE9C /* Build configuration list for PBXNativeTarget "ZZQSourceEditorCommand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154F5C2320FF38E900F6EE9C /* Debug */,
+				154F5C2420FF38E900F6EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154F5C3920FF391600F6EE9C /* Build configuration list for PBXNativeTarget "ZQSourceEditorCommand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154F5C3A20FF391600F6EE9C /* Debug */,
+				154F5C3B20FF391600F6EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154F5C0620FF38E800F6EE9C /* Project object */;
+}
